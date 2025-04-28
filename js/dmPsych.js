@@ -1561,7 +1561,7 @@ const dmPsych = (function() {
 
                   `<div class='parent'>
                     <p>The number of tokens you earn for each winning streak depends in part on random chance.</p>
-                    <p>Usually, you'll receive 10 tokens for every consecutive tile you activated. This is called a <span style="color:${hex}; font-weight:bold">standard outcome</span>. For instance, if you achieve a winning streak of 3, a <span style="color:${hex}; font-weight:bold">standard outcome</span> would be worth 30 tokens.</p>
+                    <p>Sometimes, you'll receive 10 tokens for every consecutive tile you activated. This is called a <span style="color:${hex}; font-weight:bold">standard outcome</span>. For instance, if you achieve a winning streak of 3, a <span style="color:${hex}; font-weight:bold">standard outcome</span> would be worth 30 tokens.</p>
                     <p>Sometimes, you'll receive ${oddBallValue_geom} tokens regardless of the length of your streak. This is called an <span style="color:red; font-weight:bold">oddball outcome</span>.</p>
                   </div>`,
 
@@ -1694,7 +1694,7 @@ const dmPsych = (function() {
 
                   `<div class='parent'>
                     <p>The number of tokens you earn for each success depends in part on random chance.</p>
-                    <p>Usually, you'll receive 10 tokens for each success and 0 tokens for each miss. These are called <span style="color:${hex}; font-weight:bold">standard outcomes</span>.</p>
+                    <p>Sometimes, you'll receive 10 tokens for each success and 0 tokens for each miss. These are called <span style="color:${hex}; font-weight:bold">standard outcomes</span>.</p>
                     <p>Sometimes, you'll receive ${oddBallValue_bern} tokens regardless of whether you succeed or miss. This is called an <span style="color:red; font-weight:bold">oddball outcome</span>.</p>
                   </div>`,
 
