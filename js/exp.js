@@ -39,11 +39,12 @@ var exp = (function() {
 
     // save condition and URL data
     jsPsych.data.addProperties({
-        pM: settings.pM,
-        gameType_1: settings.gameType[0],
-        gameType_2: settings.gameType[1],
-        basePay: settings.basePay,
         startTime: String(new Date()),
+        basePay: settings.basePay,
+        pM: settings.pM,
+        gameType: settings.gameType,
+        pEM_1: 10 / settings.nOddBall[0],
+        pEM_2: 10 / settings.nOddBall[1],
     });
 
    /*
@@ -423,7 +424,7 @@ var exp = (function() {
     p.save_data = {
         type: jsPsychPipe,
         action: "save",
-        experiment_id: "Pi4TEFFZNVDG",
+        experiment_id: "GIENc4LBezKl",
         filename: dmPsych.filename,
         data_string: ()=>jsPsych.data.get().csv()
     };
