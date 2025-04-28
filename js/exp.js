@@ -58,6 +58,14 @@ var exp = (function() {
 
         const gameName = (round == 1) ? gameName_1 : gameName_2;
 
+        const streakOrTile = (gameType == 'strk') ? 'streak' : 'tile';
+
+        const pOddBall = nOddBall[round-1] * 10;
+
+        const pOddBall1 = nOddBall[0] * 10;
+
+        const pOddBall2 = nOddBall[1] * 10;
+
         const howToEarn = {
             type: jsPsychInstructions,
             pages: dmPsych.tileGame_howToEarn(gameType, gameName_1, gameName_2, pM, color, hex, roundLength, round, nOddBall),
@@ -75,7 +83,7 @@ var exp = (function() {
         if (gameType == 'strk') {
             // attention check #1
             a1 = 'Earn as many tokens as possible.';
-            a2 = 'By building streaks.';
+            a2 = `${pOddBall}%`;
             a3 = (pM < .5) ? 'Compared to practice, I will have less time to respond.' : (pM > .5) ? 'Compared to practice, I will have more time to respond.' : 'None of the above.';
         };
 
@@ -89,7 +97,7 @@ var exp = (function() {
         if (gameType == 'bern') {
             // attention check #1
             a1 = 'Earn as many tokens as possible.';
-            a2 = 'By activating each individual tile.';
+            a2 = `${pOddBall}%`;
             a3 = (pM < .5) ? 'Compared to practice, I will have less time to respond.' : (pM > .5) ? 'Compared to practice, I will have more time to respond.' : 'None of the above.';
         };
 
@@ -105,9 +113,9 @@ var exp = (function() {
                       required: true
                     },
                     {
-                      prompt: `How do you earn tokens in the ${gameName}?`, 
+                      prompt: `After each ${streakOrTile}, what are your chances of an <span style="color:red; font-weight:bold">oddball outcome</span>?`, 
                       name: 'attnChk2', 
-                      options: ['By activating each individual tile.', 'By building streaks.'], 
+                      options: [`${pOddBall1}%`, `${pOddBall2}%`], 
                       required: true
                     },
                     {
@@ -125,9 +133,9 @@ var exp = (function() {
                       required: true
                     },
                     {
-                      prompt: `How do you earn tokens in the ${gameName}?`, 
+                      prompt: `After each ${streakOrTile}, what are your changes of an <span style="color:red; font-weight:bold">oddball outcome</span>?`, 
                       name: 'attnChk2', 
-                      options: ['By activating each individual tile.', 'By building streaks.'], 
+                      options: [`${pOddBall1}%`, `${pOddBall2}%`], 
                       required: true
                     },
                 ];

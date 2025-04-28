@@ -1598,9 +1598,9 @@ const dmPsych = (function() {
                     <p>Accordingly, ${fasterOrSlower} during practice.</p>
                   </div>`];          
         } else if (round == 2) {
-          html = [`<div class='parent' style='text-align: left'>
+          html = [`<div class='parent'>
                     <p>The ${gameName_2} is identical to the ${gameName_1} with one exception:</p>
-                    <p>Instead having a ${pOddBall1}% chance of a oddball outcome, you'll have a ${pOddBall2}% chance of an oddball outcome.</p>
+                    <p>You'll have a <span style="color:red; font-weight:bold">${pOddBall2}%</span> chance of an <span style="color:red; font-weight:bold">oddball outcome</span> (instead of a ${pOddBall1}% chance).</p>
                     <p>Otherwise, the game is the same.</p>
                   </div>`];
         };
@@ -1667,7 +1667,7 @@ const dmPsych = (function() {
                     <p>Accordingly, ${fasterOrSlower} during practice.</p>
                   </div>`];
         } else if (round == 2) {
-          html = [`<div class='parent' style='text-align: left'>
+          html = [`<div class='parent'>
                     <p>The ${gameName_2} is identical to the ${gameName_1} with one exception:</p>
                     <p>In each round of the ${gameName_2}, you'll have ${roundLength} chances to activate the grey tile.</p>
                     <p>Accordingly, your goal in the ${gameName_2} is not to activate each and every tile.<br>
@@ -1727,9 +1727,9 @@ const dmPsych = (function() {
                       <p>Accordingly, ${fasterOrSlower} during practice.</p>
                   </div>`];
         } else if (round == 2) {
-          html = [`<div class='parent' style='text-align: left'>
+          html = [`<div class='parent'>
                     <p>The ${gameName_2} is identical to the ${gameName_1} with one exception:</p>
-                    <p>Instead having a ${pOddBall1}% chance of a oddball outcome, you'll have a ${pOddBall2}% chance of an oddball outcome.</p>
+                    <p>You'll have a <span style="color:red; font-weight:bold">${pOddBall2}%</span> chance of an <span style="color:red; font-weight:bold">oddball outcome</span> (instead of a ${pOddBall1}% chance).</p>
                     <p>Otherwise, the game is the same.</p>
                   </div>`];
         };
