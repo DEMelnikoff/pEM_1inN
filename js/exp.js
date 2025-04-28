@@ -6,7 +6,7 @@ var exp = (function() {
     const colorOrder = Math.floor(Math.random() * 2);
 
     const settings = {
-        pM:.9,
+        pM:.8,
         pM_practice: .5,
         nOddBall: [[4, 1], [1, 4]][Math.floor(Math.random()*2)],
         gameType: ['bern', 'strk'][Math.floor(Math.random()*2)],
