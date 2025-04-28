@@ -43,8 +43,8 @@ var exp = (function() {
         basePay: settings.basePay,
         pM: settings.pM,
         gameType: settings.gameType,
-        pEM_1: 10 / settings.nOddBall[0],
-        pEM_2: 10 / settings.nOddBall[1],
+        pEM_1: settings.nOddBall[0] / 10,
+        pEM_2: settings.nOddBall[1] / 10,
     });
 
    /*
