@@ -9,7 +9,7 @@ var exp = (function() {
         pM:.9,
         pM_practice: .5,
         nOddBall: [[4, 1], [1, 4]][Math.floor(Math.random()*2)],
-        gameType: ['bern', 'bern'][Math.floor(Math.random()*2)],
+        gameType: ['bern', 'strk'][Math.floor(Math.random()*2)],
         nTrials: 50,
         basePay: 2.40,
         roundLength: 6,
