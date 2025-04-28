@@ -8,7 +8,7 @@ var exp = (function() {
     const settings = {
         pM:.8,
         pM_practice: .5,
-        nOddBall: [[4, 1], [1, 4]][Math.floor(Math.random()*2)],
+        nOddBall: [[5, 1], [1, 5]][Math.floor(Math.random()*2)],
         gameType: ['bern', 'strk'][Math.floor(Math.random()*2)],
         nTrials: 50,
         basePay: 2.40,
