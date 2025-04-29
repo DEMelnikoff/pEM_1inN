@@ -1694,32 +1694,29 @@ const dmPsych = (function() {
 
                   `<div class='parent'>
                     <p>The number of tokens you earn for each success depends in part on random chance.</p>
-                    <p>Sometimes, you'll receive 10 tokens for each success and 0 tokens for each miss. These are called <span style="color:${hex}; font-weight:bold">standard outcomes</span>.</p>
-                    <p>Sometimes, you'll receive ${oddBallValue_bern} tokens regardless of whether you succeed or miss. This is called an <span style="color:red; font-weight:bold">oddball outcome</span>.</p>
+                    <p>After each success, you have a ${100-pOddBall1}% chance of receiving 10 tokens and a ${pOddBall1}% chance of receiving ${oddBallValue_bern} tokens.</p>
+                    <p>After each miss, you have a ${100-pOddBall1}% chance of receiving 0 tokens and a ${pOddBall1}% chance of receiving ${oddBallValue_bern} tokens.</p>
+                    <p>To see some examples, continue to the next page.</p>
                   </div>`,
 
                   `<div class='parent' style='height: 550px'>
-                    <p>Suppose you succeed.<br>If you get a <span style="color:${hex}; font-weight:bold">standard outcome</span>, you'll see this message indicating that you earned 10 tokens.</p>    
+                    <p>If you succeed, you have a ${100-pOddBall1}% chance of seeing this message indicating that you earned 10 tokens.</p>    
                     <div class="token-text-win" style="color:${hex}">+10 Tokens</div>
                   </div>`,
 
                   `<div class='parent' style='height: 550px'>
-                    <p>If you succeed and get an <span style="color:red; font-weight:bold">oddball outcome</span>,<br>you'll see this message indicating that you earned ${oddBallValue_bern} tokens.</p>    
+                    <p>If you succeed, you have a ${pOddBall1}% chance of seeing this message indicating that you earned ${oddBallValue_bern} tokens.</p>    
                     <div class="oddball-text">+${oddBallValue_bern} Tokens</div>
                   </div>`,
 
                   `<div class='parent' style='height: 550px'>
-                    <p>Suppose you miss a tile.<br>If you get a <span style="color:${hex}; font-weight:bold">standard outcome</span>, you'll see this message indicating that you earned 0 tokens.</p>
+                    <p>If you miss, you have a ${100-pOddBall1}% chance of seeing this message indicating that you earned 0 tokens.</p>    
                     <div class="token-text-lose">+0 Tokens</div>
                   </div>`,
 
                   `<div class='parent' style='height: 550px'>
-                    <p>If you miss and get an <span style="color:red; font-weight:bold">oddball outcome</span>,<br>you'll see this message indicating that you earned ${oddBallValue_bern} tokens.</p>
+                    <p>If you miss, you have a ${pOddBall1}% chance of seeing this message indicating that you earned ${oddBallValue_bern} tokens.</p>    
                     <div class="oddball-text">+${oddBallValue_bern} Tokens</div>
-                  </div>`,
-
-                  `<div class='parent'>
-                    <p>After each tile in the ${gameName_1}, you have a <span style="color:${hex}; font-weight:bold">${100-pOddBall1}%</span> chance of a <span style="color:${hex}; font-weight:bold">standard outcome</span><br>and a <span style="color:red; font-weight:bold">${pOddBall1}%</span> chance of an <span style="color:red; font-weight:bold">oddball outcome</span></p>
                   </div>`,
 
                  `<div class='parent'>
