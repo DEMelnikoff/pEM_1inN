@@ -1706,7 +1706,7 @@ const dmPsych = (function() {
 
                   `<div class='parent' style='height: 550px'>
                     <p>If you succeed, you have a ${pOddBall1}% chance of seeing this message indicating that you earned ${oddBallValue_bern} tokens.</p>    
-                    <div class="oddball-text">+${oddBallValue_bern} Tokens</div>
+                    <div class="token-text-win">+${oddBallValue_bern} Tokens</div>
                   </div>`,
 
                   `<div class='parent' style='height: 550px'>
@@ -1716,7 +1716,7 @@ const dmPsych = (function() {
 
                   `<div class='parent' style='height: 550px'>
                     <p>If you miss, you have a ${pOddBall1}% chance of seeing this message indicating that you earned ${oddBallValue_bern} tokens.</p>    
-                    <div class="oddball-text">+${oddBallValue_bern} Tokens</div>
+                    <div class="token-text-lose">+${oddBallValue_bern} Tokens</div>
                   </div>`,
 
                  `<div class='parent'>
